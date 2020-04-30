@@ -1,0 +1,20 @@
+body {margin: 30px 20px 30px 20px;}
+h1 {font-family: 'Nunito', Sans Serif; font-size: 40px; font-weight: 700; padding: 20px 0px 0px 0px; color: #25144E;}
+h2 {font-family: 'Nunito', Sans Serif; font-size: 30px; font-weight: 700; padding: 10px 0px 0px 0px; color: #25144E;}
+h3 {font-family: 'Nunito', Sans Serif; font-size: 24px; font-weight: 700; padding: 10px 0px 0px 0px; color: #25144E;}
+h6 {font-family: 'Nunito', Sans Serif; font-size: 18px; font-weight: 700; padding: 10px 0px 0px 0px; color: #25144E;}
+p {font-family: 'Montserrat', Sans Serif; font-size: 16px; font-weight: 300; line-height: 30px; padding: 10px 0px 10px 0px; color: #86808A;}
+li {font-family: 'Montserrat', Sans Serif; font-size: 14px; font-weight: 300; line-height: 24px; padding: 10px 0px 10px 0px; color: #86808A;}
+ol {font-weight: 900; color: #86808A;}
+b {font-family: 'Montserrat', Sans Serif; font-size: 16px; font-weight: 600; line-height: 24px; padding: 10px 0px 10px 0px; color: #86808A;}
+li, p {padding-left: 20px;}
+ol {list-style: none; counter-reset: my-awesome-counter;}
+ol li {
+    counter-increment: my-awesome-counter;
+  }
+ol li::before {
+    color: #25144E;
+    content: counter(my-awesome-counter) ". ";
+    padding-right: 20px;
+    font-weight: bold;
+  }
